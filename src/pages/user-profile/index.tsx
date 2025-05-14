@@ -13,7 +13,7 @@ import {
   useLazyGetUserByIdQuery,
 } from "../../app/services/userApi"
 import { GoBack } from "../../components/go-back"
-import { BASE_URL } from "../../constants"
+import { VITE_API_URL } from "../../constants"
 import {
   MdOutlinePersonAddAlt1,
   MdOutlinePersonAddDisabled,
@@ -90,7 +90,7 @@ export const UserProfile = () => {
         <Card className="flex flex-col items-center text-center space-y-4 p-5 w-full md:w-auto">
           <div className="relative">
             <Image
-              src={`${BASE_URL}${data.avatarUrl}`}
+              src={`${VITE_API_URL}${data.avatarUrl}`}
               alt={data.name}
               width={200}
               height={200}

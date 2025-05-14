@@ -1,6 +1,6 @@
 import React from "react"
 import { User as HeroUiUser } from "@heroui/react"
-import { BASE_URL } from "../../constants"
+import {  VITE_API_URL } from "../../constants"
 type Props = {
   name: string
   avatarUrl: string
@@ -20,7 +20,7 @@ export const User: React.FC<Props> = ({
       className={className}
       description={description}
       avatarProps={{
-        src: `${BASE_URL}${avatarUrl}`,
+        src: `${VITE_API_URL}${avatarUrl}`,
       }}
     />
   )
